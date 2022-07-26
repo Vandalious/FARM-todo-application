@@ -6,8 +6,8 @@ designed using **FARM** stack.
                 |
                 |
                 |--------> **F**ast**A**PI ([Link](https://fastapi.tiangolo.com/) to documentation)
-                |--------> **R**eact
-                |--------> **M**ongoDB
+                |--------> **R**eact ([Link](https://reactjs.org/docs/getting-started.html) to documentation)
+                |--------> **M**ongoDB ([Link](https://www.mongodb.com/docs/) to documentation)
 
 ### MongoDB runs on `http://localhost:27017`.
 ### FastAPI runs on `http://localhost:8000`.
