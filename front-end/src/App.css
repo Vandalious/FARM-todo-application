@@ -1,0 +1,223 @@
+.App {
+  background-color: beige;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", open-sans;
+}
+.App header {
+  position: relative;
+}
+.App .logo {
+  margin: 0.6em 2em;
+  font-size: x-large;
+  position: absolute;
+}
+.App .logo .main-span {
+  color: rgb(235, 51, 51);
+  font-weight: bold;
+}
+.App .logo .secondary-span {
+  font-style: italic;
+}
+.App .nav-bar-bg {
+  height: 4em;
+  background-color: rgb(23, 165, 153);
+}
+.App Form {
+  margin: auto;
+  margin-top: 4em;
+  width: 35%;
+  outline: 7px solid rgba(0, 0, 0, 0.205);
+  outline-offset: 20px;
+}
+.App .bg-animation {
+  margin-top: -5em;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  /* SMOKE */
+  /* WRITING */
+}
+.App .bg-animation svg {
+  width: 256px;
+  height: 256px;
+}
+.App .bg-animation #smoke-1 {
+  stroke-dasharray: 0, 10;
+  -webkit-animation: smoke 6s ease infinite;
+          animation: smoke 6s ease infinite;
+}
+.App .bg-animation #smoke-2 {
+  stroke-dasharray: 0, 10;
+  -webkit-animation: smoke 6s 0.5s ease infinite;
+          animation: smoke 6s 0.5s ease infinite;
+}
+@-webkit-keyframes smoke {
+  0% {
+    stroke-dasharray: 0, 10;
+  }
+  50% {
+    stroke-dasharray: 10, 0;
+  }
+  100% {
+    stroke-dasharray: 10, 0;
+    opacity: 0;
+  }
+}
+@keyframes smoke {
+  0% {
+    stroke-dasharray: 0, 10;
+  }
+  50% {
+    stroke-dasharray: 10, 0;
+  }
+  100% {
+    stroke-dasharray: 10, 0;
+    opacity: 0;
+  }
+}
+.App .bg-animation #line-1 {
+  opacity: 0;
+  -webkit-animation: writing 0.5s linear forwards;
+          animation: writing 0.5s linear forwards;
+}
+.App .bg-animation #line-2 {
+  opacity: 0;
+  -webkit-animation: writing 0.5s 1s linear forwards;
+          animation: writing 0.5s 1s linear forwards;
+}
+.App .bg-animation #line-3 {
+  opacity: 0;
+  -webkit-animation: writing 0.5s 1.5s linear forwards;
+          animation: writing 0.5s 1.5s linear forwards;
+}
+.App .bg-animation #line-4 {
+  opacity: 0;
+  -webkit-animation: writing 0.5s 2s linear forwards;
+          animation: writing 0.5s 2s linear forwards;
+}
+@-webkit-keyframes writing {
+  0% {
+    width: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 14px;
+    opacity: 1;
+  }
+}
+@keyframes writing {
+  0% {
+    width: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 14px;
+    opacity: 1;
+  }
+}
+
+.Todo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.Todo .title-priority {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.Todo .title {
+  width: 50%;
+}
+.Todo .priority {
+  color: rgba(68, 68, 68, 0.719);
+  width: 50%;
+  font-size: small;
+  margin-top: 0.7em;
+  font-style: italic;
+}
+.Todo .detail {
+  border-top: 1px solid;
+  margin-top: 1;
+  padding-top: 1e;
+}
+.Todo .done-button {
+  margin-top: 0.6em;
+  width: 15%;
+  height: 30%;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 80%;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.Todo .done-button:hover {
+  background-color: #fff;
+}
+.Todo .done-button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+.TodoList {
+  overflow-y: scroll;
+  max-height: 30vh;
+  margin: 4em auto 0.5em auto;
+  width: 40%;
+  justify-content: center;
+}
+
+.TodoList::-webkit-scrollbar {
+  width: 10px;
+}
+
+.TodoList::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+.TodoList::-webkit-scrollbar-track {
+  background: #999;
+}
+
+@media only screen and (max-width: 1050px) {
+  .Todo .title-priority {
+    width: 100%;
+  }
+  .TodoList {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .TodoList {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .App {
+    width: 450px;
+    height: 750px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=App.css.map */
