@@ -7,4 +7,5 @@ A simple TODO web application, designed using **FARM** stack: [**F**ast**A**PI](
 ##### FastAPI runs on `http://localhost:8000`.
 ##### React runs on `http://localhost:3000`.
 
-*the above values can be edited*
+
+(*the above values can be edited*)
